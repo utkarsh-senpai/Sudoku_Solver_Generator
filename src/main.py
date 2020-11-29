@@ -12,7 +12,7 @@ def shuffle(s): return sample(s,len(s))
 
 def ran(gen,k):
     squares = side*side
-    empties = squares * 3//(9-k)
+    empties = squares * 3//(8-k)
     for p in sample(range(squares),empties):
         gen[p//side][p%side] = 0
     #numSize = len(str(side))   
